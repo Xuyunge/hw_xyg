@@ -31,7 +31,7 @@ cat 1.gtf | awk '$1 =="XI" && $3 =="CDS"' | sort -k 5 -n | tail
  XI ensembl CDS 658719 660464 . - 0 gene_id "YKR105C"; gene_version "1"; transcript_id "YKR105C"; transcript_version "1"; exon_number "1"; gene_name "VBA5"; gene_source "ensembl"; gene_biotype "protein_coding"; transcript_name "VBA5"; transcript_source "ensembl"; transcript_biotype "protein_coding"; protein_id "YKR105C"; protein_version "1";   
  XI ensembl CDS 661442 663286 . + 0 gene_id "YKR106W"; gene_version "1"; transcript_id "YKR106W"; transcript_version "1"; exon_number "1"; gene_name "GEX2"; gene_source "ensembl"; gene_biotype "protein_coding"; transcript_name "GEX2"; transcript_source "ensembl"; transcript_biotype "protein_coding"; protein_id "YKR106W"; protein_version "1";   
 ```
-
+*～完整的结果见[这里](https://github.com/Xuyunge/hw_xyg/blob/master/HW1_xyg.md)～*
 ## <font color=008B8B>第3题：</font>
 __<font color=008B8B>统计1.gtf文件中IV号染色体上各类feature（1.gtf文件的第3列，有些注释文件中还应同时考虑第2列）的数目，并按升序排列。</font>__
 - 命令：
