@@ -4,20 +4,23 @@ ___学号：2019012302___
 ___组别：第4组___  
 ## <font color=violetred>BLAST作业：</font>  
 ### **<font color=violetred>操作流程：</font>**  
-**<font color=violetred>1. 打开ncbi > 选择BLAST > 选择BLASTp</font>**  
+1. 打开ncbi > 选择BLAST > 选择BLASTp  
 
 ![blast1](assets/blast1.png)
 
 ![blast2](assets/blast2.png)
 
-**<font color=violetred>2. 输入Query序列 > 选择Database > 选择Organism</font>**  
+2. 输入Query序列 > 选择Database > 选择Organism  
+- 选择Oragnism为Mus musculus (taxid: 10090)  
 
 ![blast3](assets/blast3.png)
+
+- 选择Oragnism为mouse (taxid: 10088)  
 
 ![blast3-2](assets/blast3-2.png)
 
 ### **<font color=violetred>结果：</font>**  
-**<font color=violetred>1. 选择Organism为Mus musculus (taxid: 10090)时的结果</font>**  
+1. 选择Organism为Mus musculus (taxid: 10090)时的结果  
 
 ![blast4](assets/blast4.png)
 
@@ -25,7 +28,7 @@ ___组别：第4组___
 
 ![blast6](assets/blast6.png)
 
-**<font color=violetred>2. 选择Organism为mouse (taxid: 10088)时的结果</font>**  
+2. 选择Organism为mouse (taxid: 10088)时的结果  
 
 ![blast5-2](assets/blast5-2.png)
 
