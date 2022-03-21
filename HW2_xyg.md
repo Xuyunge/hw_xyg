@@ -1,39 +1,36 @@
-___作业1___  
+___作业2___  
 ___姓名：许芸阁___  
 ___学号：2019012302___  
 ___组别：第4组___  
-## <font color=violetred>BLAST作业：</font>  
-### **<font color=violetred>操作流程：</font>**  
-1. 打开ncbi > 选择BLAST > 选择BLASTp  
 
-2. 输入Query序列 > 选择Database > 选择Organism  
-    - 选择Oragnism为Mus musculus (taxid: 10090)：  
+## <font color=royalblue>MEGA作业简答：</font>
 
-    - 选择Oragnism为mouse (taxid: 10088)：  
+1. **<font color=royalblue>试结合最终结果，解释original tree和Bootstrap consensus tree之间的区别。</font>**
+ 
+    - Original tree是得到的最优树，有branch length的信息，代表遗传距离，（MEGA11中也可以设置让original tree分支处显示自展值，但我没让它显示出来）
 
-3. 设置输出结果最多保留10个、E值最大为0.5  
+    - Bootstrap consensus tree是将自举法检验（bootstrap）得到的多个最优树合并得到的树，它没有branch length的信息，节点处的数字是自展值，一般>70比较可靠。
 
-### **<font color=violetred>结果：</font>**  
-1. 选择Organism为Mus musculus (taxid: 10090)时的结果：  
+2. **<font color=royalblue>从构建原理的角度，简单解释不同构建方法所需时间有较大差异的原因。</font>**  
 
-2. 选择Organism为mouse (taxid: 10088)时的结果：  
+    - 距离法在各个物种之间的比较，根据一定的假设（进化距离模型）推导得出分类群之间的进化关系，构建一个进化距离矩阵，根据这个矩阵中的进化距离关系构建进化树。
 
-### **<font color=violetred>输出结果不同的原因：</font>**  
+    - 最大简约法（MP）认为在一系列能够解释序列差异的的进化树中具有最少核酸或氨基酸替换（即变异数最少，“最简”）的进化树是最优的，因此需要先遍历所有树的结构，然后寻找最优（最简）的树。
+
+    - 最大似然法（ML）对每个可能的进化位点分配一个概率，然后综合所有位点，找到概率最大的进化树。ML允许采用不同的进化模型对变异进行分析评估，并在此基础上构建系统发育树。
+
+    - 比起距离法建树的方式，MP要先遍历所有树的结构，因此时间复杂度大大增加；ML与MP一样要先遍历所有树的结构，但比起MP，ML寻找最优的方式更加复杂，因此时间复杂度大大增加。
+
+    - 三种方法的时间复杂度关系为：距离法 << MP << ML
+
+3. **<font color=royalblue>以同样的方法分析同样的数据，所产生的树有可能存在不同吗？为什么？</font>**  
+
+    - 可能存在不同，这是由建树的基于概率的算法决定的。所以要做bootstrap检验。
 
 
-## <font color=royalblue>MEGA作业：</font>
-### **<font color=royalblue>系统发育树：</font>**  
-1. 距离法  
 
-2. 最大简约法  
 
-3. 最大似然法  
 
-### **<font color=royalblue>问题：</font>**  
-1. 试结合最终结果，解释origin tree和Bootstrap consensus tree之间的区别。  
 
-2. 从构建原理的角度，简单解释不同构建方法所需时间有较大差异的原因。  
-
-3. 以同样的方法分析同样的数据，所产生的树有可能存在不同吗？为什么？  
 
 
