@@ -5,7 +5,7 @@ ___组别：第4组___
 
 ## <font color=violetred>bash脚本</font>
 
-```json
+```j
 #!/bin/bash
 
 path="/Users/xyg/bash_homework"
@@ -17,6 +17,8 @@ if [ -f "${path}/${val}" ];then
 echo "$val" >> ./filename.txt
 elif [ -d "${path}/${val}" ];then
 echo "$val" >> ./dirname.txt
+else  # 补充
+echo "error: $val"
 fi
 done
 
