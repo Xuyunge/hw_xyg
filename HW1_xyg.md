@@ -13,7 +13,7 @@ __<font color=008B8B>解释1.gtf文件中第4、5列代表什么，exon长度应
 __<font color=008B8B>列出1.gtf文件中XI号染色体上的后10个CDS（按照每个CDS终止位置的基因组坐标进行sort）。</font>__
 - 命令：
  
-```j
+```bash
 cat 1.gtf | awk '$1 =="XI" && $3 =="CDS"' | sort -k 5 -n | tail
 ```
 
@@ -35,7 +35,7 @@ cat 1.gtf | awk '$1 =="XI" && $3 =="CDS"' | sort -k 5 -n | tail
 ## <font color=008B8B>第3题：</font>
 __<font color=008B8B>统计1.gtf文件中IV号染色体上各类feature（1.gtf文件的第3列，有些注释文件中还应同时考虑第2列）的数目，并按升序排列。</font>__
 - 命令：
-```j
+```bash
 cat 1.gtf | grep -v '^#' | awk '$1 =="IV" ' | cut -f 3 | sort | uniq -c | sort -n
 ```
 - 结果：

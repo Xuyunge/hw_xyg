@@ -5,7 +5,7 @@ ___组别：第4组___
 
 ## <font color=violetred>bash脚本</font>
 
-```j
+```bash
 #!/bin/bash
 
 path="/Users/xyg/bash_homework"
