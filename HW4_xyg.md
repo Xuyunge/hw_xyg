@@ -17,10 +17,15 @@ perl sam2bed.pl THA2.sam > THA2.bed
 perl sam2bed.pl e_coli_500.sam > e_coli_500.bed
 
 # 按条件筛选
-grep -v chrV THA2.bed > THA2_without_chrV.bed
+grep -v -w 'chrV' THA2.bed > THA2_without_chrV.bed
+or
+grep -v $'chrV\t' THA2.bed > THA2_without_chrV.bed
+or
+cat THA2.bed | awk '$1 !="chrV"' > THA2_without_chrV.bed
+
 grep $'chrXII\t' THA2.bed > THA2_chrXII.bed
 
 # 得到上一步中输出的两个文件的长度
-wc -l THA2_without_chrV.bed    # 915行
+wc -l THA2_without_chrV.bed    # 1125行
 wc -l THA2_chrXII.bed   # 169行
 ```
