@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Session genome="hg38" locus="chr7:5525618-5534302" version="8">
+    <Resources>
+        <Resource path="hg38.ACTB.intron.bed" type="bed"/>
+        <Resource path="hg38.ACTB.gff" type="gff"/>
+        <Resource path="COAD.ACTB.coverage.bedgraph" type="bedgraph"/>
+    </Resources>
+    <Panel height="257" name="DataPanel" width="1423">
+        <Track attributeKey="hg38.ACTB.gff" clazz="org.broad.igv.track.FeatureTrack" color="255,204,51" colorScale="ContinuousColorScale;0.0;0.0;255,255,255;0,0,178" fontSize="10" groupByStrand="false" height="80" id="/Users/xyg/Desktop/bioinfo_tsinghua_share/homework/hg38.ACTB.gff" name="hg38.ACTB.gff" visible="true"/>
+        <Track altColor="0,153,255" attributeKey="hg38.ACTB.intron.bed" clazz="org.broad.igv.track.FeatureTrack" colorScale="ContinuousColorScale;0.0;0.0;255,255,255;0,0,178" fontSize="10" groupByStrand="false" height="80" id="/Users/xyg/Desktop/bioinfo_tsinghua_share/homework/hg38.ACTB.intron.bed" name="hg38.ACTB.intron.bed" visible="true"/>
+        <Track attributeKey="COAD.ACTB.coverage.bedgraph" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="255,204,204" fontSize="10" height="80" id="/Users/xyg/Desktop/bioinfo_tsinghua_share/homework/COAD.ACTB.coverage.bedgraph" name="COAD.ACTB.coverage.bedgraph" renderer="BAR_CHART" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="12513.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+    </Panel>
+    <Panel height="336" name="FeaturePanel" width="1423">
+        <Track attributeKey="Reference sequence" clazz="org.broad.igv.track.SequenceTrack" fontSize="10" height="80" id="Reference sequence" name="Reference sequence" sequenceTranslationStrandValue="POSITIVE" shouldShowTranslation="false" visible="true"/>
+        <Track altColor="153,0,153" attributeKey="Refseq Genes" clazz="org.broad.igv.track.FeatureTrack" color="0,0,204" fontSize="10" groupByStrand="false" height="80" id="https://s3.amazonaws.com/igv.org.genomes/hg38/ncbiRefSeq.txt.gz" name="Refseq Genes" visible="true"/>
+    </Panel>
+    <PanelLayout dividerFractions="0.43166666666666664"/>
+    <HiddenAttributes>
+        <Attribute name="DATA FILE"/>
+        <Attribute name="DATA TYPE"/>
+        <Attribute name="NAME"/>
+    </HiddenAttributes>
+</Session>
